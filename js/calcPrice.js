@@ -10,7 +10,7 @@ function calcPrice() {
 		const currencyItem = item.querySelector(`.price__currency`); // цена одного пакета роллов
 		const currency = parseInt(currencyItem.innerText) * parseInt(countItem.innerText); // общая цена
 
-		price += currency; // подсчитываем стоимость товаров в корзине
+		price = currency + price; // подсчитываем стоимость товаров в корзине
 	})
 
 	priceHTML.innerText = price;

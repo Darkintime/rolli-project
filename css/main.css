@@ -168,7 +168,8 @@ h4 {
 	color: #0EA107;
 }
 
-.total-price {
+.total-price,
+#₴ {
 	color: #EB5A1E;
 }
 
@@ -178,4 +179,31 @@ h4 {
 
 .none {
 	display: none;
+}
+
+.navbar {
+	text-align: center;
+}
+
+.navbar-expand-lg .navbar-collapse {
+	justify-content: space-around;
+	font-size: 1.3rem;
+}
+
+.hide {
+	opacity: 1;
+	animation-name: hideProducts;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes hideProducts {
+	to {
+		opacity: 0;
+		min-height: 0;
+		min-width: 0;
+		padding: 0;
+		margin: 0;
+		border: 0 !important;
+	}
 }
